@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet-Solutions "Contacto"</title>
+    <link rel="shortcut icon" href="../imagenes/favicon.png">
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- Estilos Css -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="menu">
+        <!-- Titulo y logo -->
+        <div>
+            <img src="../imagenes/PhotoIndex/Logo2.jpg" alt="Logo del sitio" class="logo">
+        </div>  
+        <div>
+            <a href="../index.html" class="home">
+                <h1 class="titulo">Pet-Solutions</h1>
+            </a>
+        </div>
+            <nav class="nav__index">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./servicios.html">Servicios</a></li>
+                    <li><a href="./productos.html">Producto</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        <!-- Menu Responsive -->
+        <div class="menu__mobile">
+            <nav class="navbar bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                    <img src="../imagenes/PhotoIndex/Logo2.jpg" alt="Logo del sitio" class="logo">
+                    <a class="navbar-brand" href="../index.html">Pet-Solutions</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">Producto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    </div>
+                </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="contacto">
+        <h2 class="tituloC">Contacto</h2>
+            <form action="">
+            <div class="nombre__contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" placeholder="Ingrese su Nombre" required>
+            </div>
+            <div class="correo__contacto">
+                <label for="correo">Correo:</label>
+                <input type="email" name="correo" placeholder="Ingrese su Correo" required>
+            </div>
+            <div class="mensaje__contacto">
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escriba su mensaje aqui"></textarea required>
+            </div>
+            <div class="boton__contacto">
+                <button type="submit">Enviar</button>
+            </div>
+            </form>
+            <iframe class ="mapa"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6168.936044493482!2d-72.63265421672547!3d-39.36828203150955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96145686fe4d2db7%3A0x9643d2a67d752e56!2sLoncoche%2C%20Araucan%C3%ADa!5e0!3m2!1ses-419!2scl!4v1685419591112!5m2!1ses-419!2scl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer__container">
+            <div class="columna1__footer">
+                <h2>Informacion de Pet-Solutions</h2>
+                <p>
+                    "Nuestra pasión es cuidar y consentir a tus mascotas.
+                    Ofrecemos servicios de paseo, peluquería, hotel y entrenamiento canino. 
+                    Confía en nosotros para brindarles <br> el amor y cuidado que se merecen."
+                </p>
+            </div>
+            <div class="columna2__footer">
+                <h2>Redes Sociales</h2>
+                    <div class="row1">
+                        <img src="../imagenes/PhotoFooter/Facebook.png" alt="Icono de Facebook">
+                        <label>Siguenos en Facebook</label>
+                    </div>
+                    <div class="row1">
+                        <img src="../imagenes/PhotoFooter/Instagram.png" alt="Icono de Instagram">
+                        <label>Siguenos en Instagram</label>
+                    </div>
+                    <div class="row1">
+                        <img src="../imagenes/PhotoFooter/Twitter.png" alt="Icono de Twitter">
+                        <label>Siguenos en Twitter</label>
+                    </div>
+                    <div class="row1">
+                        <img src="../imagenes/PhotoFooter/Whatsapp.png" alt="Icono de WhatsApp">
+                        <label>Comunicate por WhatsApp</label>
+                    </div>
+                    <div class="row1">
+                        <img src="../imagenes/PhotoFooter/Youtube.png" alt="Icono de YouTube">
+                        <label>Siguenos en YouTube
+                        </label>
+                    </div>
+            </div>
+            <div class="columna3__footer">
+                <h2>Informacion Contacto</h2>
+                <div class="row2">
+                    <img src="../imagenes/PhotoFooter/Home.png">
+                    <label> Loncoche,
+                    Novena Region,
+                    Chile.
+                    </label>
+                </div>
+                    <div class="row2">
+                        <img src="../imagenes/PhotoFooter/Email.png">
+                        <label> contacto@petsolutions.com
+                        </label>
+                    </div> 
+            </div> 
+        </div>
+        <div class="footer__copyright">
+            <div class="copyright">
+                © 2023 Todos los derechos reservados | <label>Claudio Ramos Parra</label>
+            </div>
+            <div class="politica">
+                <a href="#">Politica y Privacidad |</a>
+                <a href="#"> Terminos y Condiciones</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

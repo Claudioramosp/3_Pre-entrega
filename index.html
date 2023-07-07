@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet-Solutions</title>
+    <link rel="shortcut icon" href="./imagenes/PhotoIndex/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- Estilos Css -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="menu">
+        <!-- Titulo y logo -->
+        <img class="logo" src="./imagenes/PhotoIndex/Logo2.jpg" alt="Logo del sitio" >
+        <div>
+            <a href="/index.html" class="home">
+                <h1 class="titulo">Pet-Solutions</h1>
+            </a>
+        </div>
+            <!-- Menu -->
+            <nav class="nav__index">
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="./paginas/servicios.html">Servicios</a></li>
+                    <li><a href="./paginas/productos.html">Producto</a></li>
+                    <li><a href="./paginas/blog.html">Blog</a></li>
+                    <li><a href="./paginas/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>  
+
+
+<!-- Menu Responsive -->
+        <div class="menu__mobile">
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <img src="./imagenes/PhotoIndex/Logo2.jpg" alt="Logo del sitio" class="logo">
+                <a class="navbar-brand" href="/index.html">Pet-Solutions</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./paginas/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./paginas/productos.html">Producto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./paginas/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="Buscar" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+                </div>
+            </div>
+            </div>
+        </nav>
+        </div>
+    </header>
+    
+        <!-- Mi carrusel de imagenes -->
+    <main>
+        <section>  
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="./imagenes/PhotoIndex/Principal1.jpg" class="d-block w-100" alt="Paseador de Perros">
+                    </div>
+                    <div class="texto-inicio">
+                        <p>¡Hola!
+                        <q>Soy Claudio <br> y junto a mi esposa te invitamos <br> a conocer nuestro emprendimiento.</q>
+                        </p>   
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./imagenes/PhotoIndex/Principal2.jpg" class="d-block w-100" alt="Paseador de Perros 2">
+                    </div>
+                    <div class="texto-inicio">
+                        <p>¡Hola!
+                        <q>Soy Claudio <br> y junto a mi esposa te invitamos <br> a conocer nuestro emprendimiento.</q>
+                        </p>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./imagenes/PhotoIndex/Principal3.jpg" class="d-block w-100" alt="Perro Jugando">
+                    <div class="texto-inicio">
+                        <p>¡Hola!
+                        <q>Soy Claudio <br> y junto a mi esposa te invitamos <br> a conocer nuestro emprendimiento.</q>
+                        </p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section> 
+        <!-- Nuestra Mision y compromisos -->
+        <section class="section__mision">
+            <h2 class="mision">Nuestra Mision</h2>
+            <p class="mision__parrafo">"En nuestra empresa, nos enfocamos en mejorar tu calidad de vida diaria y en asegurarnos de que tus mascotas sean felices y reciban los mejores cuidados y alimentación. Queremos que disfrutes de cada momento sin preocupaciones y que puedas confiar en nosotros para brindarles a tus queridas mascotas una vida plena. Únete a nosotros y descubre cómo podemos hacer la diferencia tanto en tu vida diaria como en la de tus adorables compañeros peludos." </p>
+            <br>
+                <div class="boton__unete">
+                    <a href="./paginas/contacto.html" class="btn btn-secondary btn-lg btn-personalizado">Unete a Nosotros</a>
+                </div>
+            <br>
+            <br>
+        </section>
+        <!-- Reseña de Clientes Satisfechos -->
+        <section>
+            <h3 class="titulo__C">Clientes Satisfechos</h3>
+            <div class="card-group">
+                <div class="card">
+                    <img src="./imagenes/PhotoIndex/Experiencia1.jpg" class="card-img-top" alt="Cliente Satisfecho 1 (Pupy)">
+                    <div class="card-body">
+                    <h5 class="card-title">"PUPY"</h5>
+                    <p class="card-text">"¡Mi paseador de perros es increíble! Siempre llega a tiempo, me lleva a mi parque favorito, y me premia con deliciosos premios. ¡Me encanta pasear con él!"</p>
+                    
+                </div>
+            </div>
+                <div class="card">
+                    <img src="./imagenes/PhotoIndex/Experiencia2.jpg" class="card-img-top" alt="Cliente Satisfecho 2 (Rex)">
+                    <div class="card-body">
+                    <h5 class="card-title">"REX"</h5>
+                    <p class="card-text">"¡Hoy fui a la peluqueria! Y me bañaron con suavidad y peinaron mi pelaje hasta que brilló como nunca. ¡Me siento tan fresco y guapo ahora!"</p>
+                </div>
+            </div>
+                <div class="card">
+                    <img src="./imagenes/PhotoIndex/Experiencia3.jpg" class="card-img-top" alt="Cliente Satisfecho 3 (Sparrow)">
+                    <div class="card-body">
+                        <h5 class="card-title">"SPARROW"</h5>
+                        <p class="card-text">"¡Guau! Pasé unos días geniales en el hotel para perros de Pet-Solutions. Mi habitación era acogedora y tenía una cama suave para descansar. Jugamos en el amplio patio con otros perros. Pet-Solutions y su equipo hicieron que mi estancia fuera una verdadera fiesta perruna!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>  
+    <!-- Footer -->
+    <footer>
+        <div class="footer__container">
+            <div class="columna1__footer">
+                <h2>Informacion de Pet-Solutions</h2>
+                <p>
+                    "Nuestra pasión es cuidar y consentir a tus mascotas.
+                    Ofrecemos servicios de paseo, peluquería, hotel y entrenamiento canino. 
+                    Confía en nosotros para brindarles <br> el amor y cuidado que se merecen."
+                </p>
+            </div>
+            <div class="columna2__footer">
+                <h2>Redes Sociales</h2>
+                    <div class="row1">
+                        <img src="./imagenes/PhotoFooter/Facebook.png" alt="Icono de Facebook">
+                        <label>Siguenos en Facebook</label>
+                    </div>
+                    <div class="row1">
+                        <img src="./imagenes/PhotoFooter/Instagram.png" alt="Icono de Instagram">
+                        <label>Siguenos en Instagram</label>
+                    </div>
+                    <div class="row1">
+                        <img src="./imagenes/PhotoFooter/Twitter.png" alt="Icono de Twitter">
+                        <label>Siguenos en Twitter</label>
+                    </div>
+                    <div class="row1">
+                        <img src="./imagenes/PhotoFooter/Whatsapp.png" alt="Icono de WhatsApp">
+                        <label>Comunicate por WhatsApp</label>
+                    </div>
+                    <div class="row1">
+                        <img src="./imagenes/PhotoFooter/Youtube.png" alt="Icono de YouTube">
+                        <label>Siguenos en YouTube
+                        </label>
+                    </div>
+            </div>
+            <div class="columna3__footer">
+                <h2>Informacion Contacto</h2>
+                <div class="row2">
+                    <img src="./imagenes/PhotoFooter/Home.png">
+                    <label> Loncoche,
+                    Novena Region,
+                    Chile.
+                    </label>
+                </div>
+                    <div class="row2">
+                        <img src="./imagenes/PhotoFooter/Email.png">
+                        <label> contacto@petsolutions.com
+                        </label>
+                    </div> 
+            </div> 
+        </div>
+        <div class="footer__copyright">
+            <div class="copyright">
+                © 2023 Todos los derechos reservados | <label>Claudio Ramos Parra</label>
+            </div>
+            <div class="politica">
+                <a href="#">Politica y Privacidad |</a>
+                <a href="#"> Terminos y Condiciones</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

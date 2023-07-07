@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet-Solutions "Productos"</title>
+    <link rel="shortcut icon" href="../imagenes/favicon.png">
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- Estilos Css -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="menu">
+        <!-- Titulo y Logo -->
+        <div>
+            <img src="../imagenes/PhotoIndex/Logo2.jpg" alt="Logo del sitio" class="logo">
+        </div>  
+        <div>
+            <a href="../index.html" class="home">
+                <h1 class="titulo">Pet-Solutions</h1>
+            </a>
+        </div>
+            <!-- Menu -->
+                <nav class="nav__index">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./servicios.html">Servicios</a></li>
+                        <li><a href="./productos.html">Producto</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+        <!-- Menu Responsive -->
+        <div class="menu__mobile">
+            <nav class="navbar bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                    <img src="../imagenes/PhotoIndex/Logo2.jpg" alt="Logo del sitio" class="logo">
+                    <a class="navbar-brand" href="../index.html">Pet-Solutions</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">Producto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    </div>
+                </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+        
+    <!-- Seccion Productos de mi pagina -->
+    <main>
+        <section class="productos">
+        <h2 class="tituloP">Productos</h2>
+            <div class="grid-container">
+                <div class="producto">
+                <div class="imagenp">
+                    <img src="../imagenes/PhotoProductos/p.alimentos.jpg" alt="Alimento para perro">
+                </div>
+                <div>
+                    <a class="textop" href="#alimentos">Alimentos</a>
+                </div>
+                </div>
+                <div class="producto">
+                    <div class="imagenp">
+                        <img src="../imagenes/PhotoProductos/snack-perro.jpg" alt="Snack para perro">
+                    </div>
+                    <div>
+                        <a href="#snacks">Snacks</a>
+                    </div>
+                </div>
+                <div class="producto">
+                    <div class="imagenp">
+                        <img src="../imagenes/PhotoProductos/alimentoH-perro.jpg" alt="Alimento húmedo para perro">
+                    </div>
+                    <div>
+                        <a href="#alimentos-humedos">Alimentos Húmedos</a>
+                    </div>
+                </div>
+                <div class="producto">
+                    <div class="imagenp">
+                        <img src="../imagenes/PhotoProductos/lata-perro.jpg" alt="Latas para perro">
+                    </div>
+                    <div>
+                        <a href="#latas">Latas</a>
+                    </div>
+                </div>
+                <div class="producto">
+                    <div class="imagenp">
+                        <img src="../imagenes/PhotoProductos/plato-perro.jpg" alt="Platos para perro">
+                    </div>
+                    <div>
+                        <a href="#Platos">Platos</a>
+                    </div>
+                </div>
+                <div class="producto">
+                    <div class="imagenp">
+                        <img src="../imagenes/PhotoProductos/bebedero.jpg" alt="Bebederos para perro">
+                    </div>
+                    <div>
+                        <a href="#Bebederos">Bebederos</a>
+                    </div>
+                </div>
+                <div class="producto">
+                    <div class="imagenp">
+                        <img src="../imagenes/PhotoProductos/juguete-perro.jpg" alt="Jueguetes para perro">
+                    </div>
+                    <div>
+                        <a href="#Juguetes">Juguetes</a>
+                    </div>
+                </div>
+                <div class="producto">
+                    <div class="imagenp">
+                        <img src="../imagenes/PhotoProductos/hueso-perro.jpg" alt="Huesos para perro">
+                    </div>
+                    <div>
+                        <a href="#Huesos">Huesos</a>
+                    </div>
+                </div>
+                <div class="producto">
+                    <div class="imagenp">
+                        <img src="../imagenes/PhotoProductos/cama-perro.jpg" alt="Camas para perro">
+                    </div>
+                    <div>
+                        <a href="#Camas">Camas</a>
+                    </div>
+                </div>
+                <div class="producto">
+                    <div class="imagenp">
+                        <img src="../imagenes/PhotoProductos/casa-perro.jpg" alt="Casas para perro">
+                    </div>
+                    <div>
+                        <a href="#Casas">Casas</a>
+                    </div>
+                </div>
+                <div class="producto">
+                    <div class="imagenp">
+                        <img src="../imagenes/PhotoProductos/collar-perro.jpg" alt="Collares para perro">
+                    </div>
+                    <div>
+                        <a href="#Collares">Collares</a>
+                    </div>
+                </div>
+                <div class="producto">
+                    <div class="imagenp">
+                        <img src="../imagenes/PhotoProductos/bozal-perro.jpg" alt="Bozales para perro">
+                    </div>
+                    <div>
+                        <a href="#Bozales">Bozales</a>
+                    </div>
+                </div>
+                <div class="producto">
+                    <div class="imagenp">
+                        <img src="../imagenes/PhotoProductos/higiene-perro.jpg" alt="Productos de Higiene para perro">
+                    </div>
+                    <div>
+                        <a href="#Higiene">Higiene</a>
+                    </div>
+                </div>
+                <div class="producto">
+                    <div class="imagenp">
+                        <img src="../imagenes/PhotoProductos/Ropa-Perro.jpg" alt="Ropa para perro">
+                    </div>
+                    <div>
+                        <a href="#Ropa">Ropa</a>
+                    </div>
+                </div>
+                <div class="producto">
+                    <div class="imagenp">
+                        <img src="../imagenes/PhotoProductos/Suplemento.jpg" alt="Suplementos para perro">
+                    </div>
+                    <div>
+                        <a href="#Suplemento">Suplementos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->    
+    <footer>
+        <div class="footer__container">
+            <div class="columna1__footer">
+                <h2>Informacion de Pet-Solutions</h2>
+                <p>
+                    "Nuestra pasión es cuidar y consentir a tus mascotas.
+                    Ofrecemos servicios de paseo, peluquería, hotel y entrenamiento canino. 
+                    Confía en nosotros para brindarles <br> el amor y cuidado que se merecen."
+                </p>
+            </div>
+            <div class="columna2__footer">
+                <h2>Redes Sociales</h2>
+                    <div class="row1">
+                        <img src="../imagenes/PhotoFooter/Facebook.png" alt="Icono de Facebook">
+                        <label>Siguenos en Facebook</label>
+                    </div>
+                    <div class="row1">
+                        <img src="../imagenes/PhotoFooter/Instagram.png" alt="Icono de Instagram">
+                        <label>Siguenos en Instagram</label>
+                    </div>
+                    <div class="row1">
+                        <img src="../imagenes/PhotoFooter/Twitter.png" alt="Icono de Twitter">
+                        <label>Siguenos en Twitter</label>
+                    </div>
+                    <div class="row1">
+                        <img src="../imagenes/PhotoFooter/Whatsapp.png" alt="Icono de WhatsApp">
+                        <label>Comunicate por WhatsApp</label>
+                    </div>
+                    <div class="row1">
+                        <img src="../imagenes/PhotoFooter/Youtube.png" alt="Icono de YouTube">
+                        <label>Siguenos en YouTube
+                        </label>
+                    </div>
+            </div>
+            <div class="columna3__footer">
+                <h2>Informacion Contacto</h2>
+                <div class="row2">
+                    <img src="../imagenes/PhotoFooter/Home.png">
+                    <label> Loncoche,
+                    Novena Region,
+                    Chile.
+                    </label>
+                </div>
+                    <div class="row2">
+                        <img src="../imagenes/PhotoFooter/Email.png">
+                        <label> contacto@petsolutions.com
+                        </label>
+                    </div> 
+            </div> 
+        </div>
+        <div class="footer__copyright">
+            <div class="copyright">
+                © 2023 Todos los derechos reservados | <label>Claudio Ramos Parra</label>
+            </div>
+            <div class="politica">
+                <a href="#">Politica y Privacidad |</a>
+                <a href="#"> Terminos y Condiciones</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
