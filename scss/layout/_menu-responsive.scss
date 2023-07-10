@@ -1,0 +1,39 @@
+.menu__mobile {
+    display: flex;
+    position: sticky;
+    top: 20px;
+    width: 100%;
+    z-index: 999;
+    .container-fluid {
+        background-color: #147384;
+        .navbar-brand {
+            font-size: 24px;
+            letter-spacing: 1px;
+            font-weight: 900;
+            border: 1%;
+        }
+    }
+}
+.offcanvas-header {
+    background-color: #147384;
+    .offcanvas-title {
+    font-size: 26px;
+    font-weight: bold;
+    }
+}
+.offcanvas-body {
+    background-color:#44c5de;
+    .nav-link {
+        font-size: 20px;
+    }
+}
+.nav-item a:hover{
+    color: gray;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+.menu__mobile {
+    display: none;
+    background-color: #147384;
+}
+

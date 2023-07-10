@@ -1,0 +1,31 @@
+.tituloS {
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+.servicios {
+    display: flex;
+    font-size: 24px;
+    padding-left: 30px;
+    .servicio {
+        margin: 20px;
+        width: 300px;
+        text-align: center;
+        width: 80% ;
+        font-size: 18px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        h4 {
+            font-weight: bold;
+        }
+    }
+} 
+/* Imagenes de la seccion "Servicios" */
+.pservicio {
+    display: flex;
+    width: 280px;
+    height: 250px;
+    justify-content: center;
+    align-content: center;
+}
