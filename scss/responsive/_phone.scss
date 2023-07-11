@@ -1,112 +1,120 @@
 /* MOBILE */
-@media (max-width: 576px) {
-    .menu {
-        flex-direction: column;
-    }
-    .nav__index, 
-    .menu__index, 
-    .titulo,
-    .home {
-        display: none;
-    }
-    .menu__mobile {
-        display: grid;
-        position: sticky;
-        top: 20px;
-        background-color: #147384;
-    }
-    .navbar-brand {
-        padding-right: unset;
-        padding-left: 10px;
-    }
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        width: 80%;
-        margin: auto;
-        justify-items: center;
-        align-content: center;
-        justify-content: center;
-    }
-    .nav__index, .logo__titulo {
-        display: none;
-    }
-    .texto-inicio {
-        position: absolute;
-        top: 30%;
-        left: 25%;
-        transform: translate(-50%, -50%);
-        color: black;
-        font-size: 12px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        background-color: rgba(255, 255, 255, 0.7);
-        opacity: 0.7;
-        border-radius: 10%;
-        padding: 0, 0, 0, 20px;
-    }
-    .tituloS,.tituloC,.tituloB,.tituloP {
-        font-size: 24px;
-    }
-    
-    .tituloB {
-        text-align: center;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        text-align: center;
-        font-size: 32px;
-        letter-spacing: 1px;
-        -weight: bold;
-    }
-    .tituloB {
-        text-align: center;
-        padding-bottom: 20px;
-        font-size: 26px;
-        letter-spacing: 1px;
-        font-weight: bold;
-        padding-top: 10px;
-    }
-    .text__consejos {
-        font-size: 22px;
-        text-align: left;
-        padding-right: 40px;
-        padding-top: 10px;
-    }
-    .img_blog1 {
-        display: flex;
-        padding-left: 100px;
-        padding-bottom: 30px;
-        width: 900px;
-        height: 300px;
-    }
-    .footer__container,
-    .footer__copyright {
-        flex-wrap: wrap;
-    }
-    .columna1__footer,
-    .columna2__footer,
-    .columna3__footer {
-        margin: 30px;
-    }
-    .politica{
-        padding-left: 12px;
-    }
-    /* Edicion de Seccion SERVICIOS */
-    .servicios {
-        display: block;
-        padding: 30px, 10px;
-    }
-    .pservicio {
-        margin: auto;
-    }
-    }
-    /* Mobile XS */
-    @media (max-width: 410px) {
-        .texto-inicio {
-            right: 30%;
-            font-size: 10px;
-        }
-        .texto-inicio p {
-            margin: 0;
+@media (max-width: 590px) {
+.menu {
+    flex-direction: column;
+}
+.nav__index, 
+.menu__index, 
+.titulo,
+.home {
+    display: none;
+}
+.menu__mobile {
+    display: grid;
+    position: sticky;
+    top: 20px;
+    background-color: #147384;
+    padding: 0;
+    .offcanvas-body {
+        a {
+            font-weight: 600;
         }
     }
+}
+.navbar-brand {
+    padding-right: unset;
+    padding-left: 10px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 80%;
+    margin: auto;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.nav__index, .logo__titulo {
+    display: none;
+}
+.texto-inicio {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 12px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 0.7;
+    border-radius: 10%;
+    padding: 0, 0, 0, 20px;
+}
+.tituloS,
+.tituloC,
+.tituloB,
+.tituloP {
+    font-size: 24px;
+}
+.tituloB {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.tituloB {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.text__consejos {
+    font-size: 22px;
+    text-align: left;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+.img_blog1 {
+    display: flex;
+    padding-left: 100px;
+    padding-bottom: 30px;
+    width: 900px;
+    height: 300px;
+}
+.footer__container,
+.footer__copyright {
+    flex-wrap: wrap;
+}
+.columna1__footer,
+.columna2__footer,
+.columna3__footer {
+    margin: 30px;
+}
+.politica {
+    padding-left: 12px;
+}
+/* Edicion de Seccion SERVICIOS */
+.servicios {
+    display: block;
+    padding: 30px, 10px;
+}
+.pservicio {
+    margin: auto;
+}
+}
+/* Mobile XS */
+@media (max-width: 410px) {
+.texto-inicio {
+    right: 30%;
+    font-size: 10px;
+}
+.texto-inicio p {
+    margin: 0;
+    }
+}

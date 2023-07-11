@@ -428,7 +428,6 @@ main section .carousel-item {
 }
 
 .contacto {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -490,25 +489,38 @@ main section .carousel-item {
 }
 
 @media (min-width: 577px) and (max-width: 875px) {
-  .titulo {
-    font-size: 22px;
+  .home .titulo {
+    font-size: 24px;
     text-align: left;
     padding-top: 20px;
+    margin: 0%;
   }
   .logo {
     height: 4rem;
     width: 4rem;
     justify-content: first baseline;
   }
+  header nav {
+    margin: 0%;
+    padding: 0%;
+  }
+  header nav ul {
+    margin-top: -10px;
+  }
   header nav ul li {
+    padding-top: 0;
+    letter-spacing: -1px;
+  }
+  header nav ul li a {
     display: inline;
-    margin-left: 1.28rem;
+    margin-left: 1.2rem;
     font-size: 20px;
     align-items: center;
     text-align: center;
-    letter-spacing: -1px;
+    padding: auto;
+    margin: auto;
   }
-  .texto-inicio {
+  main section .texto-inicio {
     position: absolute;
     top: 25%;
     left: 28%;
@@ -521,13 +533,13 @@ main section .carousel-item {
     opacity: 0.7;
     border-radius: 10%;
   }
-  .footer__container,
-  .footer__copyright {
+  footer .footer__container,
+  footer .footer__copyright {
     flex-wrap: wrap;
   }
 }
 /* MOBILE */
-@media (max-width: 576px) {
+@media (max-width: 590px) {
   .menu {
     flex-direction: column;
   }
@@ -542,6 +554,10 @@ main section .carousel-item {
     position: sticky;
     top: 20px;
     background-color: #147384;
+    padding: 0;
+  }
+  .menu__mobile .offcanvas-body a {
+    font-weight: 600;
   }
   .navbar-brand {
     padding-right: unset;
@@ -573,7 +589,10 @@ main section .carousel-item {
     border-radius: 10%;
     padding: 0, 0, 0, 20px;
   }
-  .tituloS, .tituloC, .tituloB, .tituloP {
+  .tituloS,
+  .tituloC,
+  .tituloB,
+  .tituloP {
     font-size: 24px;
   }
   .tituloB {
@@ -583,7 +602,7 @@ main section .carousel-item {
     text-align: center;
     font-size: 32px;
     letter-spacing: 1px;
-    -weight: bold;
+    font-weight: 700;
   }
   .tituloB {
     text-align: center;
