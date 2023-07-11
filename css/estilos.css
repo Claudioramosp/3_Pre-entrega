@@ -64,7 +64,7 @@ header {
 .home .titulo {
   display: flex;
   margin: 0;
-  font-size: 2.625em;
+  font-size: 40px;
   letter-spacing: 1px;
   font-weight: 900;
   padding: 15px 10px;
@@ -147,7 +147,6 @@ footer .footer__container {
   display: flex;
   margin: auto;
   padding: 40px;
-  justify-content: space-between;
 }
 footer .footer__container .columna1__footer,
 footer .footer__container .columna2__footer,
@@ -159,42 +158,48 @@ footer .footer__container .columna3__footer {
 footer .footer__container .columna1__footer h2,
 footer .footer__container .columna2__footer h2,
 footer .footer__container .columna3__footer h2 {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 700;
   padding-bottom: 10px;
 }
 
-.columna1__footer .row1,
+.columna1__footer,
+.row1,
 .row2 {
-  display: flex;
   margin-top: 10px;
 }
-.columna1__footer .row1 img,
+.columna1__footer img,
+.row1 img,
 .row2 img {
   width: 40px;
   height: 40px;
   margin: 0;
   padding: 0;
 }
-.columna1__footer .row1 p,
+.columna1__footer p,
+.row1 p,
 .row2 p {
-  font-size: 30px;
-  margin-top: 20px;
+  font-size: 18px;
+  margin-top: 25px;
 }
-.columna1__footer .row1 label,
+.columna1__footer label,
+.row1 label,
 .row2 label {
   margin-top: 10px;
   margin-left: 10px;
 }
-.columna1__footer .row1 label:hover,
+.columna1__footer label:hover,
+.row1 label:hover,
 .row2 label:hover {
   color: gray;
   letter-spacing: 1px;
   transition: color 0.3s ease-in-out;
 }
 
-/* .row1 label:hover,
-.row2 label */
+.columna1__footer h2 {
+  margin-top: -10px;
+}
+
 .footer__copyright {
   width: 100%;
   background-color: black;
@@ -204,24 +209,20 @@ footer .footer__container .columna3__footer h2 {
   padding: 20px;
   margin: auto;
 }
-
-.copyright {
+.footer__copyright .copyright {
   padding-left: 10px;
+}
+.footer__copyright .copyright .copyright label {
+  font-weight: bold;
 }
 
 .politica {
   padding-right: 10px;
 }
-
 .politica a {
   text-decoration: none;
   color: white;
 }
-
-.copyright label {
-  font-weight: bold;
-}
-
 .politica a:hover {
   color: gray;
   transition: color 0.3s ease-in-out;
@@ -488,20 +489,9 @@ main section .carousel-item {
   margin: 20px;
 }
 
-/* Edicion de mi INDEX-Article */
-main article section {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-/* Edicion de Contacto */
-/* Edicion de Footer */
-/* Edicion de Contacto */
-/* Vista Tablet */
 @media (min-width: 577px) and (max-width: 875px) {
   .titulo {
-    font-size: 24px;
+    font-size: 22px;
     text-align: left;
     padding-top: 20px;
   }
