@@ -4,6 +4,8 @@
     top: 20px;
     width: 100%;
     z-index: 999;
+    display: none;
+    background-color: #147384;
     .container-fluid {
         background-color: #147384;
         .navbar-brand {
@@ -27,13 +29,12 @@
         font-size: 20px;
     }
 }
-.nav-item a:hover{
-    color: gray;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
+.nav-item {
+        a:hover{
+        color: gray;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+    }
 }
-.menu__mobile {
-    display: none;
-    background-color: #147384;
-}
+
 

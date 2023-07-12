@@ -1,0 +1,19 @@
+/* Mobile XS */
+@media (max-width: 410px) {
+.texto-inicio {
+    right: 30%;
+    font-size: 10px;
+}
+.texto-inicio p {
+    margin: 0;
+}
+.navbar-brand {
+    padding-right: unset;
+}
+.home {
+    .titulo{
+        display: flex;
+        align-items: left;
+    }
+}
+}

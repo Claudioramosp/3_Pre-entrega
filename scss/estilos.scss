@@ -1,6 +1,6 @@
 @import 'layout/body';
 @import 'layout/header';
-@import 'responsive/menu-responsive';
+@import 'layout/menu-responsive';
 @import 'layout/footer';
 @import 'views/index';
 @import 'views/servicios';
@@ -9,4 +9,5 @@
 @import 'views/contacto';
 @import 'responsive/tablet';
 @import 'responsive/phone';
+@import 'responsive/phoneXS';
 @import url('https://fonts.googleapis.com/css2?family=Forum&family=Spectral:wght@300&display=swap');

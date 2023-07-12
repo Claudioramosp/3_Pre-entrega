@@ -19,7 +19,8 @@ article {
 }
 
 footer {
-  background-color: #147384;
+  background: rgb(20, 115, 132);
+  background: linear-gradient(180deg, rgb(20, 115, 132) 0%, rgb(20, 115, 132) 26%, rgb(68, 197, 222) 100%);
 }
 
 header {
@@ -51,6 +52,7 @@ header {
 .home {
   text-decoration: none;
   color: black;
+  transition: color 0.3s ease-in-out;
 }
 .home:hover {
   text-decoration: none;
@@ -59,7 +61,6 @@ header {
   font-weight: 900;
   box-shadow: 0 0 10px black;
   font-weight: bold;
-  transition: color 0.3s ease-in-out;
 }
 .home .titulo {
   display: flex;
@@ -89,6 +90,7 @@ header .nav__index ul li {
 header .nav__index ul li a {
   color: black;
   text-decoration: none;
+  font-weight: bold;
 }
 header .nav__index ul li a:hover {
   color: gray;
@@ -102,6 +104,8 @@ header .nav__index ul li a:hover {
   top: 20px;
   width: 100%;
   z-index: 999;
+  display: none;
+  background-color: #147384;
 }
 .menu__mobile .container-fluid {
   background-color: #147384;
@@ -134,11 +138,6 @@ header .nav__index ul li a:hover {
   transition: color 0.3s ease-in-out;
 }
 
-.menu__mobile {
-  display: none;
-  background-color: #147384;
-}
-
 footer {
   width: 100%;
   justify-content: center;
@@ -146,14 +145,13 @@ footer {
 footer .footer__container {
   display: flex;
   margin: auto;
-  padding: 40px;
+  padding: 30px;
 }
 footer .footer__container .columna1__footer,
 footer .footer__container .columna2__footer,
 footer .footer__container .columna3__footer {
-  width: 33%;
-  font-weight: 900;
-  padding-right: 10px;
+  width: 27%;
+  font-weight: 800;
 }
 footer .footer__container .columna1__footer h2,
 footer .footer__container .columna2__footer h2,
@@ -187,17 +185,14 @@ footer .footer__container .columna3__footer h2 {
 .row2 label {
   margin-top: 10px;
   margin-left: 10px;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
 }
 .columna1__footer label:hover,
 .row1 label:hover,
 .row2 label:hover {
   color: gray;
   letter-spacing: 1px;
-  transition: color 0.3s ease-in-out;
-}
-
-.columna1__footer h2 {
-  margin-top: -10px;
 }
 
 .footer__copyright {
@@ -222,10 +217,11 @@ footer .footer__container .columna3__footer h2 {
 .politica a {
   text-decoration: none;
   color: white;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
 }
 .politica a:hover {
   color: gray;
-  transition: color 0.3s ease-in-out;
 }
 
 /* Carrusel de imagenes */
@@ -311,9 +307,12 @@ main section .carousel-item {
 }
 
 .servicios {
-  display: flex;
-  font-size: 24px;
-  padding-left: 30px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
 }
 .servicios .servicio {
   margin: 20px;
@@ -334,6 +333,7 @@ main section .carousel-item {
   height: 250px;
   justify-content: center;
   align-content: center;
+  border-radius: 2%;
 }
 
 .productos {
@@ -380,17 +380,19 @@ main section .carousel-item {
   height: 100%;
   object-fit: cover;
 }
-.imagenp img .producto a {
+
+.producto a {
   margin-top: 10px;
   text-decoration: none;
   color: black;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 550;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
 }
-.imagenp img .producto a:hover {
+.producto a:hover {
   color: gray;
   font-weight: bold;
-  transition: color 0.3s ease-in-out;
 }
 
 .tituloB {
@@ -489,6 +491,7 @@ main section .carousel-item {
 }
 
 @media (min-width: 577px) and (max-width: 875px) {
+  /* Edicion de Header y Nav */
   .home .titulo {
     font-size: 24px;
     text-align: left;
@@ -520,6 +523,7 @@ main section .carousel-item {
     padding: auto;
     margin: auto;
   }
+  /* Edicion de Index */
   main section .texto-inicio {
     position: absolute;
     top: 25%;
@@ -533,6 +537,34 @@ main section .carousel-item {
     opacity: 0.7;
     border-radius: 10%;
   }
+  /* Edicion de pagina "Servicios */
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .servicios .servicio {
+    margin: 20px;
+    width: 250px;
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .servicios .servicio h4 {
+    font-weight: bold;
+  }
+  .pservicio {
+    display: flex;
+    width: 250px;
+    height: 220px;
+    justify-content: center;
+    align-content: center;
+  }
+  /* Edicion de Footer */
   footer .footer__container,
   footer .footer__copyright {
     flex-wrap: wrap;
@@ -563,6 +595,19 @@ main section .carousel-item {
     padding-right: unset;
     padding-left: 10px;
   }
+  main section .texto-inicio {
+    position: absolute;
+    top: 25%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 12px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 0.7;
+    border-radius: 10%;
+  }
+  /* Seccion Productos */
   .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -572,22 +617,6 @@ main section .carousel-item {
     justify-items: center;
     align-content: center;
     justify-content: center;
-  }
-  .nav__index, .logo__titulo {
-    display: none;
-  }
-  .texto-inicio {
-    position: absolute;
-    top: 30%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    color: black;
-    font-size: 12px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background-color: rgba(255, 255, 255, 0.7);
-    opacity: 0.7;
-    border-radius: 10%;
-    padding: 0, 0, 0, 20px;
   }
   .tituloS,
   .tituloC,
@@ -625,27 +654,38 @@ main section .carousel-item {
     width: 900px;
     height: 300px;
   }
-  .footer__container,
-  .footer__copyright {
-    flex-wrap: wrap;
-  }
-  .columna1__footer,
-  .columna2__footer,
-  .columna3__footer {
-    margin: 30px;
-  }
-  .politica {
-    padding-left: 12px;
-  }
   /* Edicion de Seccion SERVICIOS */
   .servicios {
     display: block;
-    padding: 30px, 10px;
+    padding-left: 55px;
+    margin: 0;
+  }
+  .servicios .servicio {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
   }
   .pservicio {
     margin: auto;
   }
 }
+/* Edicion de Footer */
+.footer__container,
+.footer__copyright {
+  flex-wrap: wrap;
+}
+
+.columna1__footer,
+.columna2__footer,
+.columna3__footer {
+  margin: 30px;
+}
+
+.politica {
+  padding-left: 12px;
+}
+
 /* Mobile XS */
 @media (max-width: 410px) {
   .texto-inicio {
@@ -654,6 +694,13 @@ main section .carousel-item {
   }
   .texto-inicio p {
     margin: 0;
+  }
+  .navbar-brand {
+    padding-right: unset;
+  }
+  .home .titulo {
+    display: flex;
+    align-items: left;
   }
 }
 

@@ -6,9 +6,12 @@
     font-weight: bold;
 }
 .servicios {
-    display: flex;
-    font-size: 24px;
-    padding-left: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
     .servicio {
         margin: 20px;
         width: 300px;
@@ -28,4 +31,5 @@
     height: 250px;
     justify-content: center;
     align-content: center;
+    border-radius: 2%;
 }

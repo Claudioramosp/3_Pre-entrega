@@ -1,4 +1,5 @@
 @media (min-width: 577px) and (max-width: 875px) {
+/* Edicion de Header y Nav */
 .home {
     .titulo {
         font-size: 24px;
@@ -34,6 +35,7 @@ header {
         }
     }
 } 
+/* Edicion de Index */
 main {
     section {
         .texto-inicio {
@@ -51,6 +53,34 @@ main {
         }
     }
 }
+/* Edicion de pagina "Servicios */
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    .servicio {
+        margin: 20px;
+        width: 250px;
+        text-align: center;
+        width: 80% ;
+        font-size: 16px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        h4 {
+            font-weight: bold;
+        }
+    }
+}
+.pservicio {
+    display: flex;
+    width: 250px;
+    height: 220px;
+    justify-content: center;
+    align-content: center;
+} 
+/* Edicion de Footer */
 footer {
     .footer__container,
     .footer__copyright{

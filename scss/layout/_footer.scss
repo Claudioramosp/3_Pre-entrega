@@ -4,13 +4,12 @@ footer{
     .footer__container {
         display: flex;
         margin: auto;
-        padding: 40px;
+        padding: 30px;
         .columna1__footer,
         .columna2__footer,
         .columna3__footer {
-            width: 33%;
-            font-weight: 900;
-            padding-right: 10px;
+            width: 27%;
+            font-weight: 800;
             h2 {
                 font-size: 26px;
                 font-weight: 700;
@@ -36,15 +35,13 @@ footer{
     label {
         margin-top: 10px;
         margin-left: 10px;
+        transition: color 0.3s ease-in-out;
+        cursor: pointer;
         &:hover {
             color: gray;
             letter-spacing: 1px;
-            transition: color 0.3s ease-in-out;
         }
     }
-}
-.columna1__footer h2 {
-    margin-top: -10px;
 }
 .footer__copyright {
     width: 100%;
@@ -66,9 +63,10 @@ footer{
     a {
         text-decoration: none;
         color: white;
+        transition: color 0.3s ease-in-out;
+        cursor: pointer;
         &:hover {
             color: gray;
-            transition: color 0.3s ease-in-out;
         }
     }
 }

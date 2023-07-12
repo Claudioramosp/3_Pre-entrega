@@ -9,6 +9,7 @@
 .home {
     display: none;
 }
+
 .menu__mobile {
     display: grid;
     position: sticky;
@@ -25,6 +26,23 @@
     padding-right: unset;
     padding-left: 10px;
 }
+main {
+    section{
+        .texto-inicio {
+            position: absolute;
+            top: 25%;
+            left: 28%;
+            transform: translate(-50%, -50%);
+            color: black;
+            font-size: 12px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            background-color: rgba(255, 255, 255, 0.7);
+            opacity: 0.7;
+            border-radius: 10%;
+        }
+    }
+}
+/* Seccion Productos */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -34,22 +52,6 @@
     justify-items: center;
     align-content: center;
     justify-content: center;
-}
-.nav__index, .logo__titulo {
-    display: none;
-}
-.texto-inicio {
-    position: absolute;
-    top: 30%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    color: black;
-    font-size: 12px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background-color: rgba(255, 255, 255, 0.7);
-    opacity: 0.7;
-    border-radius: 10%;
-    padding: 0, 0, 0, 20px;
 }
 .tituloS,
 .tituloC,
@@ -87,6 +89,23 @@
     width: 900px;
     height: 300px;
 }
+/* Edicion de Seccion SERVICIOS */
+.servicios {
+    display: block;
+    padding-left: 55px;
+    margin: 0;
+    .servicio {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+}
+.pservicio {
+    margin: auto;
+}
+}
+/* Edicion de Footer */
 .footer__container,
 .footer__copyright {
     flex-wrap: wrap;
@@ -98,23 +117,4 @@
 }
 .politica {
     padding-left: 12px;
-}
-/* Edicion de Seccion SERVICIOS */
-.servicios {
-    display: block;
-    padding: 30px, 10px;
-}
-.pservicio {
-    margin: auto;
-}
-}
-/* Mobile XS */
-@media (max-width: 410px) {
-.texto-inicio {
-    right: 30%;
-    font-size: 10px;
-}
-.texto-inicio p {
-    margin: 0;
-    }
 }

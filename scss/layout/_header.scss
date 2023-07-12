@@ -24,6 +24,7 @@ header {
 .home {
     text-decoration: none;
     color: black;
+    transition: color 0.3s ease-in-out;
     &:hover {
         text-decoration: none;
         color: gray;
@@ -31,7 +32,7 @@ header {
         font-weight: 900;
         box-shadow: 0 0 10px black;
         font-weight: bold;
-        transition: color 0.3s ease-in-out;
+        
     }
     .titulo {
         display: flex;
@@ -58,6 +59,7 @@ header .nav__index {
                 a {
                 color: black;
                 text-decoration: none;
+                font-weight: bold;
                 &:hover {
                     color: gray;
                     font-weight: bold;
