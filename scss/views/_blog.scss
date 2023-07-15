@@ -8,12 +8,12 @@
     font-weight: bold;
 }
 .titulo__blog {
-    text-align: center;
     padding-bottom: 20px;
     font-size: 26px;
     letter-spacing: 1px;
     font-weight: bold;
     padding-top: 10px;
+    text-align: center;
 }
 .text__consejos {
     font-size: 22px;
@@ -27,4 +27,10 @@
     padding-bottom: 30px;
     width: 900px;
     height: 300px;
+}
+
+.menu__blog {
+    display: flex;
+    position: sticky;
+    top: 10px;
 }
