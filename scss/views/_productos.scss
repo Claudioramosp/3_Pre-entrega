@@ -17,7 +17,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 10px;
     justify-items: center;
     align-content: center;
     justify-content: center;
@@ -29,8 +29,8 @@
         text-align: center;
         align-items:center;
         .imagenp {
-            width: 200px;
-            height: 200px;
+            width: 190px;
+            height: 190px;
             overflow: hidden;
         }
     }

@@ -309,37 +309,38 @@ main section .carousel-item {
   font-weight: bold;
 }
 
-main .servicios {
+main section.servicios {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
+  grid-template-rows: repeat(1, 1fr);
   justify-items: center;
+  grid-gap: -10px;
+  gap: -10px;
   width: 100%;
-  align-content: center;
-  justify-content: center;
 }
-main .servicios .servicio {
-  margin: 20px;
-  width: 300px;
-  text-align: center;
+main section.servicios .servicio {
   width: 80%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  justify-items: center;
+  justify-content: center;
+  width: 70%;
   font-size: 18px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-main .servicios .servicio h3 {
+main section.servicios .servicio h3 {
   font-weight: bold;
 }
-
-/* Imagenes de la seccion "Servicios" */
-.pservicio {
+main section.servicios .servicio .pservicio {
   display: flex;
-  width: 280px;
-  height: 250px;
+  width: 100%;
   justify-content: center;
   align-content: center;
   border-radius: 2%;
 }
 
+/* Imagenes de la seccion "Servicios" */
 .productos {
   display: flex;
   flex-direction: column;
@@ -360,7 +361,7 @@ main .servicios .servicio h3 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-gap: 10px;
   justify-items: center;
   align-content: center;
   justify-content: center;
@@ -374,8 +375,8 @@ main .servicios .servicio h3 {
   align-items: center;
 }
 .grid-container .producto .imagenp {
-  width: 200px;
-  height: 200px;
+  width: 190px;
+  height: 190px;
   overflow: hidden;
 }
 
@@ -422,7 +423,7 @@ img.img_blog1 {
   display: flex;
   padding-left: 100px;
   padding-bottom: 30px;
-  width: 800px;
+  width: 90%;
   height: 300px;
 }
 
@@ -548,31 +549,64 @@ img.img_blog1 {
     border-radius: 10%;
   }
   /* Edicion de pagina "Servicios */
-  .servicios {
+  main section.servicios {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     align-content: center;
     justify-content: center;
+    padding-right: 10px;
+    overflow: hidden;
   }
-  .servicios .servicio {
+  main section.servicios .servicio {
     margin: 20px;
-    width: 250px;
+    width: 200px;
     text-align: center;
     width: 80%;
     font-size: 16px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
-  .servicios .servicio h4 {
+  main section.servicios .servicio h4 {
     font-weight: bold;
   }
-  .pservicio {
+  main section.servicios .servicio .pservicio {
     display: flex;
-    width: 250px;
-    height: 220px;
+    width: 100%;
     justify-content: center;
     align-content: center;
+  }
+  /* Edicion de Productos */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .grid-container .producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+  }
+  .grid-container .producto .imagenp {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5%;
+  }
+  /* Edicion de Blog */
+  img.img_blog1 {
+    display: flex;
+    padding-left: 100px;
+    padding-bottom: 30px;
+    width: 90%;
+    height: 300px;
   }
   /* Edicion de Footer */
   footer .footer__container,
@@ -624,19 +658,27 @@ img.img_blog1 {
     border-radius: 10%;
   }
   /* Seccion Productos */
-  .grid-container {
+  main .productos .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    width: 80%;
-    padding: 0;
     justify-items: center;
     align-content: center;
     justify-content: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    box-shadow: 10%;
-    overflow-x: hidden;
+    margin-bottom: 50px;
+    overflow: hidden;
+  }
+  main .productos .grid-container .producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+  }
+  main .productos .grid-container .producto .imagenp {
+    width: 160px;
+    height: 160px;
+    border-radius: 5%;
   }
   .imagenp img {
     width: 90%;
@@ -656,90 +698,93 @@ img.img_blog1 {
   .tituloP {
     font-size: 24px;
   }
+  /* Edicion de Seccion SERVICIOS */
+  main section.servicios {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+  }
+  main section.servicios .servicio {
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    justify-items: center;
+    justify-content: center;
+    width: 70%;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  main section.servicios .servicio h3 {
+    font-weight: bold;
+  }
+  main section.servicios .servicio .pservicio {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    border-radius: 2%;
+  }
+  /* Edicion de Blog */
+  main article .tituloB {
+    justify-content: center;
+    text-align: center;
+  }
+  main article .tituloB .titulo__blog h4 {
+    justify-content: center;
+    text-align: center;
+  }
+  main article .listado__blog {
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden;
+  }
+  .tituloB {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+  .text__consejos {
+    font-size: 22px;
+    text-align: left;
+    padding-left: 25px;
+    padding-top: 10px;
+  }
+  img.img_blog1 {
+    display: flex;
+    width: 100%;
+    padding: 0%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0%;
+  }
+  .listado__blog {
+    overflow: hidden;
+  }
+  /* Edicion de Footer */
+  .footer__container,
+  .footer__copyright {
+    flex-wrap: wrap;
+  }
+  .columna1__footer,
+  .columna2__footer,
+  .columna3__footer {
+    margin: 30px;
+  }
+  .politica {
+    padding-left: 12px;
+  }
 }
-/* Edicion de Seccion SERVICIOS */
-.servicios {
-  display: block;
-  padding-left: 25px;
-  margin: 0;
-}
-.servicios .servicio {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  font-weight: 550;
-}
-.servicios .servicio img {
-  width: 100%;
-}
-
-.pservicio {
-  margin: auto;
-}
-
-/* Edicion de Blog */
-main article .tituloB {
-  justify-content: center;
-  text-align: center;
-}
-main article .tituloB .titulo__blog h4 {
-  justify-content: center;
-  text-align: center;
-}
-
-main article .listado__blog {
-  padding: 0%;
-  margin: 0%;
-  overflow: hidden;
-}
-
-.tituloB {
-  text-align: center;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  text-align: center;
-  font-size: 32px;
-  letter-spacing: 1px;
-  font-weight: 700;
-}
-
-.text__consejos {
-  font-size: 22px;
-  text-align: left;
-  padding-left: 25px;
-  padding-top: 10px;
-}
-
-img.img_blog1 {
-  display: flex;
-  width: 100%;
-  padding: 0%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin: 0%;
-}
-
-.listado__blog {
-  overflow: hidden;
-}
-
-/* Edicion de Footer */
-.footer__container,
-.footer__copyright {
-  flex-wrap: wrap;
-}
-
-.columna1__footer,
-.columna2__footer,
-.columna3__footer {
-  margin: 30px;
-}
-
-.politica {
-  padding-left: 12px;
-}
-
 /* Edicion Extra para seccion Productos */
 @media (max-width: 500px) {
   .grid-container {

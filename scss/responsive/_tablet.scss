@@ -54,32 +54,68 @@ main {
     }
 }
 /* Edicion de pagina "Servicios */
-.servicios {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-items: center;
-    align-content: center;
-    justify-content: center;
-    .servicio {
-        margin: 20px;
-        width: 250px;
-        text-align: center;
-        width: 80% ;
-        font-size: 16px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        h4 {
-            font-weight: bold;
+main{
+    section.servicios {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
+        padding-right: 10px;
+        overflow: hidden;
+        .servicio {
+            margin: 20px;
+            width: 200px;
+            text-align: center;
+            width: 80% ;
+            font-size: 16px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            h4 {
+                font-weight: bold;
+            }
+            .pservicio {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-content: center;
+            } 
         }
     }
 }
-.pservicio {
-    display: flex;
-    width: 250px;
-    height: 220px;
-    justify-content: center;
+
+/* Edicion de Productos */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    justify-items: center;
     align-content: center;
-} 
+    justify-content: center;
+    margin-bottom: 50px;
+    .producto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        align-items:center;
+        .imagenp {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 5%;
+        }
+    }
+}
+/* Edicion de Blog */
+img.img_blog1 {
+    display: flex;
+    padding-left: 100px;
+    padding-bottom: 30px;
+    width: 90%;
+    height: 300px;
+}
 /* Edicion de Footer */
 footer {
     .footer__container,
