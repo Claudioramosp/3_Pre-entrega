@@ -5,11 +5,12 @@
     padding-top: 20px;
     font-weight: bold;
 }
-.servicios {
-    width: 100%;
+main .servicios {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
     justify-items: center;
+    width: 100%;
     align-content: center;
     justify-content: center;
     .servicio {

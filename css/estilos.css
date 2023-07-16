@@ -309,15 +309,16 @@ main section .carousel-item {
   font-weight: bold;
 }
 
-.servicios {
-  width: 100%;
+main .servicios {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
   justify-items: center;
+  width: 100%;
   align-content: center;
   justify-content: center;
 }
-.servicios .servicio {
+main .servicios .servicio {
   margin: 20px;
   width: 300px;
   text-align: center;
@@ -325,7 +326,7 @@ main section .carousel-item {
   font-size: 18px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.servicios .servicio h3 {
+main .servicios .servicio h3 {
   font-weight: bold;
 }
 
@@ -417,19 +418,19 @@ main section .carousel-item {
   text-align: center;
 }
 
+img.img_blog1 {
+  display: flex;
+  padding-left: 100px;
+  padding-bottom: 30px;
+  width: 800px;
+  height: 300px;
+}
+
 .text__consejos {
   font-size: 22px;
   text-align: left;
   padding-right: 40px;
   padding-top: 10px;
-}
-
-.img_blog1 {
-  display: flex;
-  padding-left: 100px;
-  padding-bottom: 30px;
-  width: 900px;
-  height: 300px;
 }
 
 .menu__blog {
