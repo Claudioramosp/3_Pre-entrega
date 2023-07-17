@@ -501,6 +501,7 @@ img.img_blog1 {
   margin: 20px;
 }
 
+/* Vista Tablet */
 @media (min-width: 577px) and (max-width: 875px) {
   /* Edicion de Header y Nav */
   .home .titulo {
@@ -593,6 +594,7 @@ img.img_blog1 {
     align-items: center;
     text-align: center;
     align-items: center;
+    font-weight: 600;
   }
   .grid-container .producto .imagenp {
     width: 200px;
@@ -614,7 +616,7 @@ img.img_blog1 {
     flex-wrap: wrap;
   }
 }
-/* MOBILE */
+/* Vista Mobile */
 @media (max-width: 576px) {
   * {
     margin: 0;
