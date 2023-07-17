@@ -39,7 +39,7 @@
     display: flex;
     justify-content: center;
     button {
-        background-color: #147384;
+        background-color: map-get($fondos, fondo-secundario );
         color: #fff;
         padding: 10px 20px;
         font-size: 16px;

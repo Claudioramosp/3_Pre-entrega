@@ -9,11 +9,12 @@
     <link rel="shortcut icon" href="./imagenes/PhotoIndex/favicon.webp">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
-
-
     <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Estilos Css -->
     <link rel="stylesheet" href="./css/estilos.css">
     <!-- Fuentes -->
@@ -26,7 +27,7 @@
         <!-- Titulo y logo -->
         <img class="logo" src="./imagenes/PhotoIndex/Logo2.webp" alt="Logo del sitio" >
         <div>
-            <a href="./index.html" class="home">
+            <a href="index.html" class="home">
                 <h1 class="titulo">Pet-Solutions</h1>
             </a>
         </div>
@@ -125,22 +126,22 @@
             </div>
         </section> 
         <!-- Nuestra Mision y compromisos -->
-        <section class="section__mision">
+        <section class="section__mision" data-aos="fade-down">
             <h2 class="mision">Nuestra Mision</h2>
                 <p class="mision__parrafo">"En nuestra empresa, nos enfocamos en mejorar tu calidad de vida diaria y 
                     en asegurarnos de que tus mascotas sean felices y reciban los mejores cuidados y alimentación. Queremos que disfrutes de cada momento
                     sin preocupaciones y que puedas confiar en nosotros para brindarles a tus queridas mascotas una vida plena. Únete a nosotros 
                     y descubre cómo podemos hacer la diferencia tanto en tu vida diaria como en la de tus adorables compañeros peludos."
                 </p>
-                <div class="boton__unete">
+                <div class="boton__unete" data-aos="zoom-in-down">
                     <a href="./paginas/contacto.html" class="btn btn-secondary btn-lg btn-personalizado unete">Unete a Nosotros</a>
                 </div>
         </section>
         <!-- Reseña de Clientes Satisfechos -->
-        <section>
+        <section data-aos="fade-down">
             <h3 class="titulo__C">Clientes Satisfechos</h3>
             <div class="card-group">
-                <div class="card">
+                <div data-aos="fade-down" class="card">
                     <img src="./imagenes/PhotoIndex/Experiencia1.webp" class="card-img-top" alt="Cliente Satisfecho 1 (Pupy)">
                     <div class="card-body">
                     <h5 class="card-title">"PUPY"</h5>
@@ -148,14 +149,14 @@
                     
                 </div>
             </div>
-                <div class="card">
+                <div data-aos="fade-down" class="card">
                     <img src="./imagenes/PhotoIndex/Experiencia2.webp" class="card-img-top" alt="Cliente Satisfecho 2 (Rex)">
                     <div class="card-body">
                     <h5 class="card-title">"REX"</h5>
                     <p class="card-text">"¡Hoy fui a la peluqueria! Y me bañaron con suavidad y peinaron mi pelaje hasta que brilló como nunca. ¡Me siento tan fresco y guapo ahora!"</p>
                 </div>
             </div>
-                <div class="card">
+                <div data-aos="fade-down" class="card">
                     <img src="./imagenes/PhotoIndex/Experiencia3.webp" class="card-img-top" alt="Cliente Satisfecho 3 (Sparrow)">
                     <div class="card-body">
                         <h5 class="card-title">"SPARROW"</h5>
@@ -226,6 +227,9 @@
             </div>
         </div>
     </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
 

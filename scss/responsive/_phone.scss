@@ -18,7 +18,7 @@
     display: grid;
     position: sticky;
     top: 20px;
-    background-color: #147384;
+    background-color: map-get($fondos, fondo-secundario );
     padding: 0;
     margin: 0;
     .offcanvas-body {

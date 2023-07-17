@@ -8,8 +8,9 @@ footer{
         .columna1__footer,
         .columna2__footer,
         .columna3__footer {
-            width: 27%;
+            width: 33%;
             font-weight: 800;
+            padding: 20px;
             h3, 
             h4 {
                 font-size: 26px;
@@ -43,6 +44,9 @@ footer{
             letter-spacing: 1px;
         }
     }
+}
+.columna1__footer{
+    margin-top: 0;
 }
 .footer__copyright {
     width: 100%;

@@ -38,15 +38,13 @@ main section {
     margin-right: 15px;
 }
 .boton__unete {
-    display: flex;
+    @extend %flex;
     padding: 25px;
-    justify-content: center;
     font-size: 26px;
-    background-color: #44c5de;
-    color: #147384;
-    align-items: center;
+    background-color: map-get($fondos, fondo-primario );
+    color: map-get($fondos, fondo-secundario );
     .unete {
-        background-color: #147384;
+        background-color: map-get($fondos, fondo-secundario );
     }
 }
 /* Seccion "Clientes Satisfechos" */

@@ -1,13 +1,12 @@
 .menu__mobile {
-    display: flex;
-    position: sticky;
+    @extend %sticky;
     top: 20px;
     width: 100%;
     z-index: 999;
     display: none;
-    background-color: #147384;
+    background-color: map-get($fondos, fondo-secundario );
     .container-fluid {
-        background-color: #147384;
+        background-color: map-get($fondos, fondo-secundario );
         .navbar-brand {
             font-size: 24px;
             letter-spacing: 1px;
@@ -17,14 +16,14 @@
     }
 }
 .offcanvas-header {
-    background-color: #147384;
+    background-color: map-get($fondos, fondo-secundario );
     .offcanvas-title {
     font-size: 26px;
     font-weight: bold;
     }
 }
 .offcanvas-body {
-    background-color:#44c5de;
+    background-color:map-get($fondos, fondo-primario );
     .nav-link {
         font-size: 20px;
     }

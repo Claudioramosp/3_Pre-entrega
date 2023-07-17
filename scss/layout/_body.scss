@@ -7,15 +7,21 @@ body {
     font-family: 'Forum', cursive;
     font-size: 16px;
 }
+header {
+    display: flex;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px black;
+    background-color: map-get($fondos, fondo-secundario );
+}
 main {
-    background-color: #44c5de;
+    background-color: map-get($fondos, fondo-primario );
 }
 
 article {
-    background-color: #44c5de
+    background-color: map-get($fondos, fondo-primario );
 }
 
 footer {
-    background: rgb(20,115,132);
+    background: map-get($fondos, fondo-terciario );
     background: linear-gradient(180deg, rgba(20,115,132,1) 0%, rgba(20,115,132,1) 26%, rgba(68,197,222,1) 100%);
 }

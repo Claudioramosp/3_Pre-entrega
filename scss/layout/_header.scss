@@ -1,12 +1,5 @@
-header {
-    display: flex;
-    padding: 10px 20px;
-    box-shadow: 0 0 10px black;
-    background-color: #147384;
-}
 .menu {
-    display: flex;
-    position: sticky;
+    @extend %sticky;
     top: 0;
     padding: 5px;
     width: 100%;

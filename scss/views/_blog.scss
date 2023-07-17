@@ -30,7 +30,6 @@ img.img_blog1 {
 }
 
 .menu__blog {
-    display: flex;
-    position: sticky;
+    @extend %sticky;
     top: 10px;
 }
