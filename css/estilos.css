@@ -47,6 +47,7 @@ footer {
   width: 100%;
   z-index: 999;
   opacity: 0.93;
+  padding-left: 25px;
 }
 
 /* Titulo y Logo */
@@ -148,11 +149,12 @@ header .nav__index ul li a:hover {
 footer {
   width: 100%;
   justify-content: center;
+  color: whitesmoke;
 }
 footer .footer__container {
   display: flex;
   margin: auto;
-  padding: 30px;
+  padding: 20px;
 }
 footer .footer__container .columna1__footer,
 footer .footer__container .columna2__footer,
@@ -777,11 +779,56 @@ img.img_blog1 {
   .footer__container,
   .footer__copyright {
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  .footer__container .columna1__footer,
+  .footer__container .columna2__footer,
+  .footer__container .columna3__footer,
+  .footer__copyright .columna1__footer,
+  .footer__copyright .columna2__footer,
+  .footer__copyright .columna3__footer {
+    margin: 10px;
+  }
+  .footer__container .columna1__footer h3,
+  .footer__container .columna1__footer h4,
+  .footer__container .columna2__footer h3,
+  .footer__container .columna2__footer h4,
+  .footer__container .columna3__footer h3,
+  .footer__container .columna3__footer h4,
+  .footer__copyright .columna1__footer h3,
+  .footer__copyright .columna1__footer h4,
+  .footer__copyright .columna2__footer h3,
+  .footer__copyright .columna2__footer h4,
+  .footer__copyright .columna3__footer h3,
+  .footer__copyright .columna3__footer h4 {
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 10px;
   }
   .columna1__footer,
-  .columna2__footer,
-  .columna3__footer {
-    margin: 30px;
+  .row1,
+  .row2 {
+    margin-top: 10px;
+  }
+  .columna1__footer p,
+  .row1 p,
+  .row2 p {
+    font-size: 16px;
+  }
+  .columna1__footer label,
+  .row1 label,
+  .row2 label {
+    margin-top: 10px;
+    margin-left: 10px;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .columna1__footer label:hover,
+  .row1 label:hover,
+  .row2 label:hover {
+    color: gray;
+    letter-spacing: 1px;
   }
   .politica {
     padding-left: 12px;
