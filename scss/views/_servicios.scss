@@ -11,17 +11,17 @@ main {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(1, 1fr);
         justify-items: center;
-        grid-gap: -10px;
         gap: -10px;
         width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
         .servicio {
             width: 80%;
-            padding-top:15px;
+            padding-top: 15px;
             padding-bottom: 15px;
             text-align: center;
             justify-items: center;
             justify-content: center;
-            width: 70% ;
             font-size: 18px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             h3 {
@@ -29,6 +29,7 @@ main {
             } 
             .pservicio {
                 @extend %flex;
+                align-items: center;
                 width: 100%;
                 border-radius: 2%;
             }

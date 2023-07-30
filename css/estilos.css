@@ -61,7 +61,7 @@ footer {
 
 .home {
   text-decoration: none;
-  color: black;
+  color: #F8F8FF;
   transition: color 0.3s ease-in-out;
 }
 .home:hover {
@@ -86,7 +86,7 @@ header .nav__index {
   text-align: end;
   justify-content: flex-end;
   margin-left: auto;
-  padding-right: 20px;
+  padding-right: 25px;
 }
 header .nav__index ul {
   display: flex;
@@ -98,7 +98,7 @@ header .nav__index ul li {
   padding-top: 22px;
 }
 header .nav__index ul li a {
-  color: black;
+  color: #F8F8FF;
   text-decoration: none;
   font-weight: bold;
 }
@@ -149,7 +149,7 @@ header .nav__index ul li a:hover {
 footer {
   width: 100%;
   justify-content: center;
-  color: whitesmoke;
+  color: #F8F8FF;
 }
 footer .footer__container {
   display: flex;
@@ -325,9 +325,10 @@ main section.servicios {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
   justify-items: center;
-  grid-gap: -10px;
   gap: -10px;
   width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 main section.servicios .servicio {
   width: 80%;
@@ -336,7 +337,6 @@ main section.servicios .servicio {
   text-align: center;
   justify-items: center;
   justify-content: center;
-  width: 70%;
   font-size: 18px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -344,6 +344,7 @@ main section.servicios .servicio h3 {
   font-weight: bold;
 }
 main section.servicios .servicio .pservicio {
+  align-items: center;
   width: 100%;
   border-radius: 2%;
 }
@@ -354,8 +355,7 @@ main section.servicios .servicio .pservicio {
 }
 .productos .tituloP {
   text-align: center;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 25px;
   font-size: 32px;
   letter-spacing: 1px;
   font-weight: bold;
@@ -369,39 +369,56 @@ main section.servicios .servicio .pservicio {
   justify-items: center;
   align-content: center;
   justify-content: center;
-  margin-bottom: 50px;
+  padding: 30px;
 }
 .grid-container .producto {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #00b4d8;
 }
 .grid-container .producto .imagenp {
-  width: 190px;
-  height: 190px;
   overflow: hidden;
 }
-
-.imagenp img {
+.grid-container .producto .imagenp img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-.producto a {
-  margin-top: 10px;
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-  font-weight: 550;
-  transition: color 0.3s ease-in-out;
-  cursor: pointer;
+.grid-container .producto .detalle {
+  padding: 10px;
 }
-.producto a:hover {
-  color: gray;
-  font-weight: bold;
+.grid-container .producto .detalle h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.grid-container .producto .detalle p {
+  font-size: 16px;
+}
+.grid-container .producto .boton__container {
+  padding: 20px;
+  justify-content: center;
+}
+.grid-container .producto .boton__container .boton__producto {
+  position: absolute;
+  bottom: 5px;
+  background-color: #0096c7;
+  color: white;
+  border: none;
+  width: 150px;
+  height: 30px;
+  border-radius: 4px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.grid-container .producto .boton__container .boton__producto:hover {
+  background-color: #44c5de;
 }
 
 .tituloB {

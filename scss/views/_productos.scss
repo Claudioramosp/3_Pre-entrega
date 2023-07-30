@@ -4,8 +4,7 @@
     justify-content: center;
     .tituloP {
         text-align: center;
-        padding-bottom: 20px;
-        padding-top: 20px;
+        padding-top: 25px;
         font-size: 32px;
         letter-spacing: 1px;
         font-weight: bold;
@@ -19,41 +18,54 @@
     justify-items: center;
     align-content: center;
     justify-content: center;
-    margin-bottom: 50px;
+    padding: 30px ;
     .producto {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        align-items:center;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        background-color: #00b4d8;
         .imagenp {
-            width: 190px;
-            height: 190px;
             overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .detalle {
+        padding: 10px;
+            h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            }
+            p {
+            font-size: 16px;
+            }
+        }
+        .boton__container{
+            padding: 20px;
+            justify-content: center;
+            .boton__producto {
+                position: absolute;
+                bottom: 5px;
+                background-color: #0096c7;
+                color: white;
+                border: none;
+                width: 150px;
+                height: 30px;
+                border-radius: 4px;
+                left: 50%; 
+                transform: translate(-50%, -50%);
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                    &:hover {
+                        background-color: map-get($fondos, fondo-primario );
+                }
+            } 
         }
     }
 }
-.imagenp img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.producto {
-    a {
-        margin-top: 10px;
-        text-decoration: none;
-        color: black;
-        font-size: 18px;
-        font-weight: 550;
-        transition: color 0.3s ease-in-out;
-        cursor: pointer;
-        &:hover{
-            color: gray;
-            font-weight: bold;
-        }
-    }
-} 
-
-
-
-
