@@ -87,24 +87,30 @@
     <main>
         <section class="contacto">
         <h2 class="tituloC">Contacto</h2>
-            <form action="">
-            <div class="nombre__contacto">
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" placeholder="Ingrese su Nombre" required>
+            <div class="formulario">
+                <form action="">
+                <div class="formulario__contacto">    
+                    <div class="nombre__contacto">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" placeholder="Ingrese su Nombre" required>
+                    </div>
+                    <div class="correo__contacto">
+                        <label for="correo">Correo:</label>
+                        <input type="email" name="correo" placeholder="Ingrese su Correo" required>
+                    </div>
+                    <div class="mensaje__contacto">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escriba su mensaje aqui"></textarea required>
+                    </div>
+                    <div class="boton__contacto">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </div>
+                </form>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6168.936044493482!2d-72.63265421672547!3d-39.36828203150955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96145686fe4d2db7%3A0x9643d2a67d752e56!2sLoncoche%2C%20Araucan%C3%ADa!5e0!3m2!1ses-419!2scl!4v1685419591112!5m2!1ses-419!2scl" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
-            <div class="correo__contacto">
-                <label for="correo">Correo:</label>
-                <input type="email" name="correo" placeholder="Ingrese su Correo" required>
-            </div>
-            <div class="mensaje__contacto">
-                <label for="mensaje">Mensaje:</label>
-                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escriba su mensaje aqui"></textarea required>
-            </div>
-            <div class="boton__contacto">
-                <button type="submit">Enviar</button>
-            </div>
-            </form>
-            <iframe class ="mapa"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6168.936044493482!2d-72.63265421672547!3d-39.36828203150955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96145686fe4d2db7%3A0x9643d2a67d752e56!2sLoncoche%2C%20Araucan%C3%ADa!5e0!3m2!1ses-419!2scl!4v1685419591112!5m2!1ses-419!2scl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
     <!-- Footer -->

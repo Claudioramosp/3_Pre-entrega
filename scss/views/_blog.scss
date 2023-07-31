@@ -1,3 +1,4 @@
+
 .tituloB {
     text-align: center;
     padding-bottom: 20px;
@@ -6,6 +7,20 @@
     font-size: 32px;
     letter-spacing: 1px;
     font-weight: bold;
+}
+.container__blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accordion {
+    width: 90%;
+    padding: 20px;
+    h2{
+        button{
+            font-size: 24px;
+        }
+    }
 }
 .titulo__blog {
     padding-bottom: 20px;

@@ -431,6 +431,20 @@ main section.servicios .servicio .pservicio {
   font-weight: bold;
 }
 
+.container__blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion {
+  width: 90%;
+  padding: 20px;
+}
+.accordion h2 button {
+  font-size: 24px;
+}
+
 .titulo__blog {
   padding-bottom: 20px;
   font-size: 26px;
@@ -474,8 +488,14 @@ img.img_blog1 {
   font-weight: bold;
   margin-bottom: 20px;
 }
-.contacto .tituloC form {
-  margin-top: 20px;
+.contacto .tituloC .formulario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+.contacto .tituloC .formulario form.formulario__contacto {
+  width: 50%;
 }
 
 .nombre__contacto,
@@ -483,6 +503,7 @@ img.img_blog1 {
 .mensaje__contacto,
 .boton__contacto {
   margin-bottom: 20px;
+  width: 100%;
 }
 .nombre__contacto label,
 .correo__contacto label,
@@ -517,7 +538,8 @@ img.img_blog1 {
 }
 
 .mapa {
-  margin: 20px;
+  width: 50%;
+  padding: 20px;
 }
 
 /* Vista Tablet */
@@ -793,32 +815,36 @@ img.img_blog1 {
     overflow: hidden;
   }
   /* Edicion de Footer */
-  .footer__container,
-  .footer__copyright {
+  footer {
+    width: 100%;
+  }
+  footer .footer__container,
+  footer .footer__copyright {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
   }
-  .footer__container .columna1__footer,
-  .footer__container .columna2__footer,
-  .footer__container .columna3__footer,
-  .footer__copyright .columna1__footer,
-  .footer__copyright .columna2__footer,
-  .footer__copyright .columna3__footer {
+  footer .footer__container .columna1__footer,
+  footer .footer__container .columna2__footer,
+  footer .footer__container .columna3__footer,
+  footer .footer__copyright .columna1__footer,
+  footer .footer__copyright .columna2__footer,
+  footer .footer__copyright .columna3__footer {
     margin: 10px;
+    width: 100%;
   }
-  .footer__container .columna1__footer h3,
-  .footer__container .columna1__footer h4,
-  .footer__container .columna2__footer h3,
-  .footer__container .columna2__footer h4,
-  .footer__container .columna3__footer h3,
-  .footer__container .columna3__footer h4,
-  .footer__copyright .columna1__footer h3,
-  .footer__copyright .columna1__footer h4,
-  .footer__copyright .columna2__footer h3,
-  .footer__copyright .columna2__footer h4,
-  .footer__copyright .columna3__footer h3,
-  .footer__copyright .columna3__footer h4 {
+  footer .footer__container .columna1__footer h3,
+  footer .footer__container .columna1__footer h4,
+  footer .footer__container .columna2__footer h3,
+  footer .footer__container .columna2__footer h4,
+  footer .footer__container .columna3__footer h3,
+  footer .footer__container .columna3__footer h4,
+  footer .footer__copyright .columna1__footer h3,
+  footer .footer__copyright .columna1__footer h4,
+  footer .footer__copyright .columna2__footer h3,
+  footer .footer__copyright .columna2__footer h4,
+  footer .footer__copyright .columna3__footer h3,
+  footer .footer__copyright .columna3__footer h4 {
     font-size: 22px;
     font-weight: 700;
     padding-bottom: 10px;
@@ -827,6 +853,7 @@ img.img_blog1 {
   .row1,
   .row2 {
     margin-top: 10px;
+    width: 100%;
   }
   .columna1__footer p,
   .row1 p,
@@ -881,6 +908,7 @@ img.img_blog1 {
     margin: 0;
   }
   .navbar-brand {
+    font-size: 14px;
     padding-right: unset;
   }
   .home .titulo {
