@@ -1013,10 +1013,8 @@ img.img_blog1 {
     align-content: center;
     justify-content: center;
     margin-bottom: 50px;
-    overflow: hidden;
     padding-left: 10px;
     padding-right: 10px;
-    width: 100%;
   }
   main .productos .grid-container .producto {
     display: flex;
